@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+
+body{
+  position: relative;
+}
+h2,form{
+  position: absolute;
+  z-index: 100;
+}
+h2{
+  top: 0;
+  font-family: 'Lumanosimo', cursive;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 70px 50px;
+}
+form{
+  font-family: 'Lumanosimo', cursive;
+  bottom: 75px;
+  display: flex;
+}
+form>*{
+  margin: 10px 50px;
+}
+form label{
+  font-size: 28px;
+}
+form input, form .btn{
+  font-family: 'Lumanosimo', cursive;
+  padding: 10px 20px;
+  border: 2px solid #c3c3c3;
+  box-shadow: 0px 0px 10px 2px #3c3c3c;
+  border-radius: 25px;
+
+}
+.btn_bg{
+  background-color: #b5d5d9;
+}
+.btn:hover{
+  cursor: pointer
+}
+.btn.btn_bg:hover{
+  background-color: #0ed5d9;
+}
+form #question{
+  width: 800px;
+  max-width: 75%;
+
+}
+#root>div>div{
+  width: 100vw!important;
+    height: 100vh!important;
 }
